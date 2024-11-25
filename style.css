@@ -1,20 +1,29 @@
 *{
     margin: 0;
+    padding: 0;
 }
-
+body{
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+ font-weight: 200;
+ font-size: 15px;
+}
 .parent{
     display: flex;
-    background-color: blue;
-    height: 100vh;
+    height: 100%;
     justify-content: center;
     align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
 }
 .container{
-    width: 60%;
-    height: 80%;
-    background-color: aquamarine;
-    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 70%;
     justify-content: space-between;
+    
 }
 .cars{
     display: flex;
@@ -26,6 +35,8 @@ img{
     margin-bottom: 20px;
 }
 h1{
+    color: white;
+    font-family: "Big Shoulders Display", sans-serif;
     margin-bottom: 20px;
 }
 p{
@@ -36,6 +47,58 @@ button{
     width: 100px;
     border: none;
     border-radius: 20px;
-    margin-bottom: 20px;
-   
+}
+button:hover{
+    cursor: pointer;
+}
+
+.sedCoat {
+    background-color: #E28525;
+    padding: 40px;
+    border-radius: 5px 5px 0px 0px;
+}
+.suvCoat{
+    background-color: #016972;
+    padding: 40px;
+}
+.luxuryCoat{
+    background-color: #00403F;
+    padding: 40px;
+    border-radius: 0px 0px 5px 5px ;
+}
+.sedans button{
+    color: #E28525;
+}
+.suvs button{
+    color: #016972;
+}
+.luxury button{
+    color: #00403F;
+}
+
+@media screen and (min-width:1000px){
+    .container{
+        flex-direction: row;
+        height: 60%;
+    }
+    .parent{ 
+        height: 100vh;
+        padding: 0px;
+    }
+  body{
+    overflow: hidden;
+  }
+    .cars{
+        height: 100%;
+    }
+
+    img, h1{
+        margin-bottom: 0px;
+    }
+    .sedCoat{
+        border-radius: 5px 0px 0px 5px;
+    }
+    .luxuryCoat{
+        border-radius: 0px 5px 5px 0px;
+    }
 }
