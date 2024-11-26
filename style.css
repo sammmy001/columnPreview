@@ -34,24 +34,36 @@ img{
     width: 50px;
     margin-bottom: 20px;
 }
-h1{
+h2{
     color: white;
     font-family: "Big Shoulders Display", sans-serif;
     margin-bottom: 20px;
+    font-weight: 700;
 }
 p{
     margin-bottom: 20px;
 }
-button{
+a{  
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
     padding: 10px;
     width: 100px;
     border: none;
     border-radius: 20px;
 }
-button:hover{
+a:hover{
     cursor: pointer;
 }
-
+.sedans a{
+    color: #E28525;
+}
+.suvs a{
+    color:#016972;
+}
+.luxury a{
+    color:#00403F;
+}
 .sedCoat {
     background-color: #E28525;
     padding: 40px;
